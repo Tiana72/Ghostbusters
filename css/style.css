@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #363636;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+  padding-left: 34px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.line {
+  height: 100%;
+  border-left: 1px solid #d4d4d4;
+  margin-left: 34px;
+}
+.search-input {
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  outline: none;
+  border: none;
+  padding-left: 38px;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #fff;
+  color: #a5a5a5;
+  margin-left: 34px;
+}
+.navigation {
+  margin-right: 44px;
+  margin-left: auto;
+}
+.navigation-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  margin-right: 18px;
+}
+.navigation-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #5671f6;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.navigation-link:hover:after {
+  transform: scaleX(1);
+}
+/* подчеркивание появляется слева 
+.navigation-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #5671f6;
+  width: 0%;
+  height: 2px;
+  transition: width 0.3s;
+}
+.navigation-link:hover:after {
+  width: 100%
+} */
+.button-group {
+  height: 100%;
+}
+.button {
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  height: 100%;
+  cursor: pointer;
+}
+.sign-up {
+  color: #5671f6;
+  background-color: #fff;
+  padding-left: 34px;
+  padding-right: 34px;
+  border-left: 1px solid #d4d4d4;
+}
+.login {
+  color: #fff;
+  background-color: #5671f6;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.container {
+  max-width: 1130px;
+  margin: auto;
+}
+.film {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.film-wrapper {
+  display: flex;
+}
+.film-trailer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.poster {
+  border-radius: 5px 5px 0px 05px;
+  width: 358px;
+}
+.trailer-button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 0px 0px 5px 5px;
+  width: 358px;
+  padding: 25px 80px;
+  cursor: pointer;
+}
+.trailer-button-icon {
+  margin-right: 14px;
+}
+.trailer-button-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5671f6;
+}
+.film-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.film-subtitle {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #a5a5a5;
+  margin-bottom: 32px;
+}
+.film-descr {
+  max-width: 514px;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+.about-film {
+  display: flex;
+  margin-bottom: 48px;
+}
+.left-side {
+  margin-right: 40px;
+}
+.about-text {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+.about-text-bold {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  font-weight: bold;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating-counter {
+  padding: 34px 24px;
+  border: 1px solid #5671f6;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #5671f6;
+  margin-right: 28px;
+}
+.rating-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.rating-text {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.rating-text-bold {
+  font-weight: bold;
+}
+.cast {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.tabs-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tab-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #a5a5a5;
+  margin-right: 30px;
+}
+.tab-title.active {
+  font-weight: 900;
+  color: #363636;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5671f6;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.en-name {
+  font-weight: normal;
+  color: #a5a5a5;
+}
